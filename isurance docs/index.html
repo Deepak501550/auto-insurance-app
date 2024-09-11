@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Insurance Information Form</h1>
+        <form id="insuranceForm">
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="givenName">Given Name:</label>
+                <input type="text" id="givenName" name="givenName" required>
+
+                <label for="taxId">Tax ID:</label>
+                <input type="text" id="taxId" name="taxId" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+
+                <label for="birthDate">Birth Date:</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+
+                <label for="maritalStatus">Marital Status:</label>
+                <select id="maritalStatus" name="maritalStatus" required>
+                    <option value="S">Single</option>
+                    <option value="M">Married</option>
+                </select>
+
+                <label for="occupation">Occupation:</label>
+                <input type="text" id="occupation" name="occupation">
+            </fieldset>
+
+            <!-- Contact Information -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="homePhone">Home Phone:</label>
+                <input type="text" id="homePhone" name="homePhone">
+
+                <label for="businessPhone">Business Phone:</label>
+                <input type="text" id="businessPhone" name="businessPhone">
+
+                <label for="cellPhone">Cell Phone:</label>
+                <input type="text" id="cellPhone" name="cellPhone">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <!-- Driver Information -->
+            <fieldset>
+                <legend>Driver Information</legend>
+                <label for="driverSurname">Driver Surname:</label>
+                <input type="text" id="driverSurname" name="driverSurname" required>
+
+                <label for="driverGivenName">Driver Given Name:</label>
+                <input type="text" id="driverGivenName" name="driverGivenName" required>
+
+                <label for="driverTaxId">Driver Tax ID:</label>
+                <input type="text" id="driverTaxId" name="driverTaxId" required>
+
+                <label for="driverGender">Driver Gender:</label>
+                <select id="driverGender" name="driverGender" required>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+
+                <label for="driverBirthDate">Driver Birth Date:</label>
+                <input type="date" id="driverBirthDate" name="driverBirthDate" required>
+
+                <label for="driverMaritalStatus">Driver Marital Status:</label>
+                <select id="driverMaritalStatus" name="driverMaritalStatus" required>
+                    <option value="S">Single</option>
+                    <option value="M">Married</option>
+                </select>
+            </fieldset>
+
+            <!-- Vehicle Information -->
+            <fieldset>
+                <legend>Vehicle Information</legend>x`
+                <label for="vehicleVin">Vehicle VIN:</label>
+                <input type="text" id="vehicleVin" name="vehicleVin" required>
+
+                <label for="coverageComp">Comprehensive Coverage:</label>
+                <input type="number" id="coverageComp" name="coverageComp" placeholder="Deductible Amount">
+
+                <label for="coverageColl">Collision Coverage:</label>
+                <input type="number" id="coverageColl" name="coverageColl" placeholder="Deductible Amount">
+
+                <label for="coverageTl">Third Party Liability Coverage:</label>
+                <input type="number" id="coverageTl" name="coverageTl" placeholder="Coverage Limit">
+
+                <label for="coverageRreim">Rental Reimbursement Coverage:</label>
+                <input type="checkbox" id="coverageRreim" name="coverageRreim">
+            </fieldset>
+
+            <!-- Home Line Business Information -->
+            <fieldset>
+                <legend>Home Line Business Information</legend>
+                <label for="homeQuestion">Question Answer:</label>
+                <select id="homeQuestion" name="homeQuestion">
+                    <option value="NO">NO</option>
+                    <option value="YES">YES</option>
+                </select>
+            </fieldset>
+
+            <!-- Auto Line Business Information -->
+            <fieldset>
+                <legend>Auto Line Business Information</legend>
+                <label for="autoQuestion1">Question 1:</label>
+                <select id="autoQuestion1" name="autoQuestion1">
+                    <option value="NO">NO</option>
+                    <option value="YES">YES</option>
+                </select>
+
+                <label for="autoQuestion2">Question 2:</label>
+                <select id="autoQuestion2" name="autoQuestion2">
+                    <option value="NO">NO</option>
+                    <option value="YES">YES</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Generate XML</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
